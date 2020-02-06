@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir=rtl>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Learning Arabic</title>
+    
+	<link rel="stylesheet" href="css/styles.css">
+	
+
+
+
+<style>
+
+body{
+background: url(img/space/bg.png)no-repeat !important;
+background-size: 100% 100%  !important;
+}
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.ani1 {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 5s ease-out 0s 1 slideInFromLeft;
+  padding-top: 10%;
+  
+}
+
+.ani2 {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 5s ease-out 0s 1 slideInFromRight;
+  padding-top: 10%;
+  
+}
+
+
+
+/* Added for aesthetics */
+ body {margin: 0;font-family: "Segoe UI", Arial, Helvetica, Sans Serif;} a {text-decoration: none; display: inline-block; margin-right: 10px; color:#000;}
+ 
+ 
+
+.van {
+top: 59%;
+left: 0%;
+}
+
+.van2 {
+    top: 52%;
+    left: 52%;
+}
+
+#axis:hover .move-right{
+    transform: translate(200px,0);
+    -webkit-transform: translate(200px,0); /** Chrome & Safari **/
+    
+}
+
+#axis:hover .move-left{
+    transform: translate(-200px,0);
+    -webkit-transform: translate(-200px,0); /** Chrome & Safari **/
+    
+}
+
+.object {
+    position: absolute;
+    transition: all 6s ease-in-out;
+    -webkit-transition: all 6s ease-in-out; /** Chrome & Safari **/
+}
+
+.object2 {
+    position: absolute;
+    transition: all 6s ease-in-out;
+    -webkit-transition: all 6s ease-in-out; /** Chrome & Safari **/
+}
+
+
+</style>
+
+
+
+</head>
+<body class="nbody"  background="img/space/bg.png">
+    <header class="header">
+        <p><a href=""></a><span></span></p>
+    </header>
+	<div class="custom-design2">
+		        <ul class="models1"></ul>
+        <ul class="letters1"></ul>
+	</div>
+    <div class="game">       
+        <img class="figure" src="img/space.png">
+
+        <ul class="models_caption"></ul>
+        <ul class="models"></ul>
+        <ul class="letters"></ul>
+
+        <a class="prev" href="space-ar.html#"><img   src="img/btn_prev_150.png" width="50px" height="50px"></a>
+        <a class="next" href="space-ar.html#"><img  src="img/btn_next_150.png" width="50px" height="50px"></a>
+        <a class="levl" href="space-ar.html#" ></a>
+    </div>
+
+    <div class="warning">
+        <p>Sorry, your Android App doesn't support<br>audio element.</p>
+    </div>
+
+    <div class="ad">
+            <a class="ad-close" href="space-ar.html#"></a>
+    </div>
+
+<canvas id="canvas"></canvas>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.1.0/gl-matrix.js'></script>
+
+</script>
+
+
+<script src="js/interact.min.js"></script>
+<script src="js/buzz.min.js"></script>
+<script src="js/space-ar.js"></script>
+
+
+
+<div id="axis" >
+<img class="object2 van2 move-left ani2" src="img/space/astro3.png"/>
+</div>		
+<div id="axis" >
+<img class="object van move-right ani1" src="img/space/astro2.png" >
+</div>	
+	
+</body>
+</html>

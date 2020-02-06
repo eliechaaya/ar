@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir=rtl>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Learning Arabic</title>
+    <link rel="stylesheet" href="css/quiz.css">
+<style>
+body{
+background: url(img/forest-bg.png)no-repeat !important;
+background-size: 100% 100%  !important;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.ani1 {  
+  animation: 3s ease-out 0s 1 slideInFromBottom;
+  padding-top: 10%;
+  
+}
+
+
+.van {
+    top: 83%;
+    left: 0%;
+}
+
+
+.object {
+    position: absolute;
+    transition: all 6s ease-in-out;
+    -webkit-transition: all 6s ease-in-out; /** Chrome & Safari **/
+}
+
+</style> 		
+
+	
+</head>
+<body class="nbody" background="img/bg-animals.gif" >
+    <header class="header">
+        <p><a href=""></a><span></span></p>
+    </header>
+	<div class="custom-design">
+		        <ul class="models1"></ul>
+        <ul class="letters1"></ul>
+	</div>
+    <div class="game">       
+        <img class="figure" src="img/animals.png">
+
+        <ul class="models_caption"></ul>
+        <ul class="models"></ul>
+        <ul class="letters"></ul>
+
+        <a class="prev" href="animal-quiz.html#"><img   src="img/btn_prev_150.png" width="50px" height="50px"></a>
+        <a class="next" href="animal-quiz.html#"><img  src="img/btn_next_150.png" width="50px" height="50px"></a>
+        <a class="levl" href="animal-quiz.html#" ></a>
+    </div>
+
+    <div class="warning">
+        <p>Sorry, your Android App doesn't support<br>audio element.</p>
+    </div>
+
+    <div class="ad">
+            <a class="ad-close" href="animal-quiz.html#"></a>
+    </div>
+
+    <script src="js/interact.min.js"></script>
+    <script src="js/buzz.min.js"></script>
+    <script src="js/quiz-animals.js"></script>
+	
+	<div id="axis-" >
+<img class="object van ani1" src="img/flowers.png" >
+</div>	
+</body>
+</html>

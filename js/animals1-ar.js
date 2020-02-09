@@ -3,32 +3,32 @@ var i= Math.floor(Math.random() * 3);
 (function () {
     var games = [
 	
-	  { img: 'img/bg-animals.png', color: '#ccecfb',  word: '',        sound: 'sounds/sounds/animals/',caption:'dog 🔊',caption_Ar:'حيوانات الغابة 🦁' ,voice:'sounds/sounds/cries/' },
+	  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/bg-animals.png', color: '#ccecfb',  word: '',        sound: 'sounds/sounds/animals/',caption:'dog 🔊',caption_Ar:'حيوانات الغابة 🦁' ,voice:'sounds/sounds/cries/' },
 
-	    { img: 'img/lion.png', color: '#ccecfb',  word: 'Lion', sound: 'sounds/sounds/animals/lion',caption:'Lion 🔊',caption_Ar:'أسد 🔊',voice:'sounds/sounds/cries/lion'},
+	    { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/lion.png', color: '#ccecfb',  word: 'Lion', sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/lion',caption:'Lion 🔊',caption_Ar:'أسد 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/lion'},
 		
-		 { img: 'img/snake'+i+'.png', color: '#ccecfb',  word: 'snake',   sound: 'sounds/sounds/animals/snake',caption:'Snake 🔊',caption_Ar:'ثعبان 🔊',voice:'sounds/sounds/cries/snake' },
+		 { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/snake'+i+'.png', color: '#ccecfb',  word: 'snake',   sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/snake',caption:'Snake 🔊',caption_Ar:'ثعبان 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/snake' },
 		 
-		 { img: 'img/fox'+i+'.png', color: '#ccecfb',  word: 'fox',        sound: 'sounds/sounds/animals/fox' ,caption:'Fox 🔊',caption_Ar:'ثعلب 🔊',voice:'sounds/sounds/cries/fox'  },
+		 { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fox'+i+'.png', color: '#ccecfb',  word: 'fox',        sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/fox' ,caption:'Fox 🔊',caption_Ar:'ثعلب 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/fox'  },
 		
 		
-		{ img: 'img/Beaver.png', color: '#ccecfb',  word: 'beaver',   sound: 'sounds/sounds/animals/beaver' ,caption:'Beaver 🔊',
-		caption_Ar:'قندس 🔊',voice:'sounds/sounds/cries/beaver'  },
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/Beaver.png', color: '#ccecfb',  word: 'beaver',   sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/beaver' ,caption:'Beaver 🔊',
+		caption_Ar:'قندس 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/beaver'  },
 		
 		
-		 { img: 'img/crocodile.png', color: '#ccecfb',  word: 'crocodile',   sound: 'sounds/sounds/animals/crocodile',caption:'Crocodile 🔊',caption_Ar:'تمساح 🔊',voice:'sounds/sounds/cries/crocodile' },
+		 { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/crocodile.png', color: '#ccecfb',  word: 'crocodile',   sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/crocodile',caption:'Crocodile 🔊',caption_Ar:'تمساح 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/crocodile' },
 		 
-		 { img: 'img/giraffe.png', color: '#ccecfb',  word: 'giraffe',     sound: 'sounds/sounds/animals/giraffe',caption:'Giraffe 🔊',caption_Ar:'زرافة 🔊',voice:'sounds/sounds/cries/giraffe'  },
+		 { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/giraffe.png', color: '#ccecfb',  word: 'giraffe',     sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/giraffe',caption:'Giraffe 🔊',caption_Ar:'زرافة 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/giraffe'  },
 		 
-		 { img: 'img/elephant.gif', color: '#ccecfb',  word: 'elephant', sound: 'sounds/sounds/animals/elephant',caption:'Elephant 🔊',caption_Ar:'فيل 🔊',voice:'sounds/sounds/cries/elephant'  },
+		 { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/elephant.gif', color: '#ccecfb',  word: 'elephant', sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/elephant',caption:'Elephant 🔊',caption_Ar:'فيل 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/elephant'  },
 		 
-		 { img: 'img/bear.gif', color: '#ccecfb',  word: 'bear',   sound: 'sounds/sounds/animals/bear' ,caption:'Bear 🔊',caption_Ar:'دب 🔊',voice:'sounds/sounds/cries/bear'  },
+		 { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/bear.gif', color: '#ccecfb',  word: 'bear',   sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/bear' ,caption:'Bear 🔊',caption_Ar:'دب 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/bear'  },
 		
 		  
-		  { img: 'img/monkey.gif', color: '#ccecfb',  word: 'monkey',   sound: 'sounds/sounds/animals/monkey' ,caption:'Monkey 🔊',caption_Ar:'قرد 🔊',voice:'sounds/sounds/cries/monkey'  },
+		  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/monkey.gif', color: '#ccecfb',  word: 'monkey',   sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/monkey' ,caption:'Monkey 🔊',caption_Ar:'قرد 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/monkey'  },
 		 
 		 
-		{ img: 'img/wolf.png', color: '#ccecfb',  word: 'wolf',   sound: 'sounds/sounds/animals/wolf',caption:'wolf 🔊',caption_Ar:'ذئب 🔊',voice:'sounds/sounds/cries/wolf' }	
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/wolf.png', color: '#ccecfb',  word: 'wolf',   sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/wolf',caption:'wolf 🔊',caption_Ar:'ذئب 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/wolf' }	
 	
         
         

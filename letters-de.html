@@ -1,0 +1,634 @@
+<html lang="ar" dir=rtl>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Learning German</title>
+    <link rel="stylesheet" href="https://eliechaaya.github.io/ar/css/styles.css">
+	
+<style>
+
+
+body {
+  background-image: linear-gradient(#71e6ff, #ffffff) !important; /* Standard syntax (must be last) */
+  background-size: 100% 100%  !important;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.ani1 {  
+  animation: 5s ease-out 0s 1 slideInFromBottom;
+  padding-top: 10%;
+  
+}
+.ani2 {  
+  animation: 5s ease-out 0s 1 slideInFromBottom;
+  padding-top: 10%;
+  
+}
+.ani3 {  
+  animation: 5s ease-out 0s 1 slideInFromRight;
+  padding-top: 10%;
+  
+}
+
+.ani4 {  
+  animation: 5s ease-out 0s 1 slideInFromLeft;
+  padding-top: 10%;
+  
+}
+
+.ani5 {  
+  animation: 5s ease-out 0s 1 slideInFromRight;
+  padding-top: 10%;
+  
+}
+
+.van {
+    top: 86%;
+    left: 0%;
+}
+.van2 {
+    top: 82%;
+    left: 0%;
+}
+
+.van3 {
+    top: 60%;
+    left: 70%;
+}
+
+.van4 {
+top: 60%;
+left: -30%;
+}
+
+.van5 {
+    top: 50%;
+    left: 30%;
+}
+
+.object {
+    position: absolute;
+    transition: all 6s ease-in-out;
+    -webkit-transition: all 6s ease-in-out; /** Chrome & Safari **/
+}
+</style>	
+	
+</head>
+<body class="nbody" background="https://raw.githubusercontent.com/eliechaaya/ar/master/img/bg_view.png" >
+    <header class="header">
+        <p><a href=""></a><span></span></p>
+    </header>
+	<div class="custom-design">
+		        <ul class="models1"></ul>
+        <ul class="letters1"></ul>
+	</div>
+    <div class="game">       
+        <img class="figure" src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters.png">
+
+        <ul class="models_caption"></ul>
+        <ul class="models"></ul>
+        <ul class="letters"></ul>
+
+        <a class="prev" href="letters-ar.html#"><img   src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/btn_prev_150.png" width="50px" height="50px"></a>
+        <a class="next" href="letters-ar.html#"><img  src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/btn_next_150.png" width="50px" height="50px"></a>
+        <a class="levl" href="letters-ar.html#" ></a>
+    </div>
+
+    <div class="warning">
+        <p>Sorry, your Android App doesn't support<br>audio element.</p>
+    </div>
+
+    <div class="ad">
+            <a class="ad-close" href="letters-ar.html#"></a>
+    </div>
+
+<script src="https://eliechaaya.github.io/ar/js/interact.min.js"></script>
+<script src="https://eliechaaya.github.io/ar/js/buzz.min.js"></script>
+
+
+
+<div id="axis" >
+<img class="object van4 ani4" src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/tree1.png" >
+</div>
+<div id="axis" >
+<img class="object van3 ani3" src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/tree2.png" >
+</div>	
+<div id="axis" >
+<img class="object van ani1" src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/tree3.png" >
+</div>		
+<div id="axis" >
+<img class="object van2 ani2" src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/block.png" >
+</div>		
+	
+<div id="axis" >
+<img class="object van5 ani5" src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/clouds.png" >
+</div>
+	
+	
+	
+<script>
+(function () {
+    var games = [
+	
+	  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters.png', color: '#ffffff',  word: '',   sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/',caption:'',caption_Ar:'الحروف الهجائية' ,voice:'' },
+	  	
+       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_a.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet01',caption:'أرنب' ,caption_Ar:'Alligator 🐊', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/rabbit'},
+	   
+	    { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_b.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet02',caption:'بطة' ,caption_Ar:'bär 🐻', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/duck'},
+		
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_c.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet03',caption:'تمساح' ,caption_Ar:'chamäleon 🦎', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/crocodile'},
+		 
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_d.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet04',caption:'ثعلب' ,caption_Ar:'Dachs ', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/fox'},
+		 
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_e.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet05',caption:'جمل' ,caption_Ar:'Elefant 🐘', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/camel'},
+		
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_f.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet06',caption:'حصان' ,caption_Ar:'Fuchs 🦊', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/horse'},
+		   
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_g.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet07',caption:'خروف' ,caption_Ar:'Gorilla 🐵', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/sheep'},
+			 
+			 
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_h.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet08',caption:'دب' ,caption_Ar:'Hund 🐶', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/bear'},
+			   
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_i.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet09',caption:'ذئب' ,caption_Ar:'Igel', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/wolf'},
+				 
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_j.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet10',caption:'روبيان' ,caption_Ar:'Jaguar 🐯', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/shrimp'},
+				   
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_k.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet11',caption:'زرافة' ,caption_Ar:'Känguru', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/giraffe'},
+					 
+		   
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_l.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet12',caption:'سلحفاة' ,caption_Ar:'Löwe 🦁', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/turtle'},
+			 
+			 
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_m.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet13',caption:'شيمبانزي' ,caption_Ar:'Maus 🐭', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/chimpanzee'},
+			
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_n.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet14',caption:'صقر' ,caption_Ar:'Nashorn 🦏', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/falcon'},
+			 
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_o.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet15',caption:'ضفدع' ,caption_Ar:'Otter', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/frog'},
+			  
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_p.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet16',caption:'طائرة' ,caption_Ar:'Pferd 🐎', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/transport/plane'},
+			  
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_q.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet17',caption:'ظبي' ,caption_Ar:'Qualle 🐙', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/deer'},
+			   
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_r.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet18',caption:'عنكبوت' ,caption_Ar:'Reh 🦌️', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/spider'},
+			   
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_s.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet19',caption:'غراب' ,caption_Ar:'Schwein 🐖', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/crow'},
+				
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_t.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet20',caption:'فيل' ,caption_Ar:'Tukan 🐦', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/elephant'},
+				 
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_u.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet21',caption:'قرد' ,caption_Ar:'Uhu 🦉', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/monkey'},
+ 
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_v.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet22',caption:'كلب' ,caption_Ar:'Viper 🐍', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/dog'},
+			  
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_w.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet23',caption:'ليث' ,caption_Ar:'Walross', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/lion2'},
+			   
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_x.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet24',caption:'ماعز' ,caption_Ar:'Xerus 🐿️', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/goat'},
+				
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_y.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet25',caption:'نحلة' ,caption_Ar:'Yak 🐃', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/bee'},
+				 
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/abc_z.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/alphabet26',caption:'هرّٙة' ,caption_Ar:'Ziege 🐐', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/cat2'},
+	  
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/aa.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/abc_ae',caption:'هرّٙة' ,caption_Ar:'ä', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/cat2'},
+		
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/oo.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/abc_oe',caption:'هرّٙة' ,caption_Ar:'ö', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/cat2'},
+		
+		
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/uu.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/abc_ue',caption:'هرّٙة' ,caption_Ar:'ü', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/cat2'},
+		
+		
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/letters/bb.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/letters/abc_esszett',caption:'هرّٙة' ,caption_Ar:'ß', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/cat2'}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+        
+        
+    ];
+    //var playicon = ' 🔊';
+
+    var $html     = $('html'),
+        $link     = $('.header a'),
+        $warning  = $('.warning'),
+        $ad       = $('.ad'),
+        $adClose  = $('.ad a'),
+        $figure   = $('.figure'),
+        $letters  = $('.letters'),
+        $models   = $('.models'),
+        $letters1  = $('.letters1'),
+        $models1   = $('.models1'),
+        $models_caption   = $('.models_caption'),
+        $prev     = $('.prev'),
+        $next     = $('.next'),
+        $levl     = $('.levl');
+
+    var index     = 0,
+        score     = 0,
+        alphabet  = 'abcdefghijklmnopqrstuvwxyz'.split(''),
+        click     = 'ontouchstart' in $html ? 'touchstart' : 'mousedown';
+
+    // Buzz & sounds
+
+    if (!buzz.isSupported()) {
+        $warning.style.visibility = 'visible';
+    }
+
+    buzz.defaults.formats = [ 'ogg', 'mp3' ];
+    buzz.defaults.preload = 'metadata';
+
+    var sounds = {
+        win:  new buzz.sound('sounds/win'),
+        fail: new buzz.sound('sounds/fail'),
+        //dice: new buzz.sound('sounds/dice'),
+        blup: new buzz.sound('sounds/blup')
+    };
+
+    for (var g in games) {
+        var game = games[g];
+        sounds[game.sound] = new buzz.sound(game.sound);
+
+        var img = new Image();
+        img.src = game.img;
+    }
+    for (var g in games) {
+        var game = games[g];
+        sounds[game.caption] = new buzz.sound(game.voice);
+
+        var img = new Image();
+        img.src = game.img;
+    }
+
+    for (var s in alphabet) {
+        sounds[alphabet[s]] = new buzz.sound('sounds/kid/' + alphabet[s]);
+    }
+
+    // Go to previous Game
+
+    $prev.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        prevGame();
+    });
+
+    function prevGame () {
+        if (--index <= 0) {
+            index = games.length - 1;
+        }
+
+        setGame(index);
+    }
+
+    // Go to next game
+
+    $next.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        nextGame();
+    });
+
+    function nextGame () {
+        if (++index >= games.length) {
+            index = 0;
+        }
+
+        setGame(index);
+    }
+
+    // Change level
+
+    $levl.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        if ($levl.textContent == 'harder') {
+            $levl.textContent = 'easier';
+            $models.classList.add('hard');
+            $models1.classList.add('hard');
+        } else {
+            $levl.textContent = 'harder';
+            $models.classList.remove('hard');
+            $models1.classList.remove('hard');
+        }
+    });
+
+    // Play sound illustration is clicked
+
+    $figure.addEventListener('click', function (e) {
+        sounds[games[index].sound].play();
+        setAnimation($figure, 'bouncing');
+    });
+
+    // Hide ad
+
+    $adClose.addEventListener('click', function (e) {
+        e.preventDefault();
+        $ad.style.display = 'none';
+    });
+
+    // Set a new Game
+
+    function setGame(index) {
+        var $li,
+            game            = games[index],
+            gameSound       = sounds[game.sound],
+            wordLetters     = game.word.split(''),
+            caption         = game.caption,
+            caption_Ar_new  = game.caption_Ar,
+            caption_Ar      = game.caption_Ar.split(''),
+            color           = game.color,
+            shuffledLetters = shuffleLetters(caption_Ar);
+
+        $html.classList.add('transitionable');
+        $html.classList.remove('won');
+
+        // Reset score
+
+        score = 0;
+
+        // Change background
+
+        $html.style.background = game.color;
+        $link.style.color = game.color;
+
+        // Change Figure
+
+        $figure.src = game.img;
+
+        setAnimation($figure, 'bouncing');
+
+        // Build Models
+
+        $models.innerHTML = '';
+        $models1.innerHTML = '';
+        $models_caption.innerHTML = '';
+
+        // for (var a in wordLetters) {
+        //     $li = document.createElement('li');
+        //     $li.className = 'model';
+        //     $li.dataset.letter = wordLetters[a];
+        //     $models1.appendChild($li);
+        // }
+        $li = document.createElement('li');
+        $li.className = 'model1';
+        if(caption_Ar_new != ''){
+            var text = document.createTextNode(caption_Ar_new);
+        }else{
+            var text = document.createTextNode(caption_Ar_new);
+        }
+
+        $li.appendChild(text);
+        // $li.addEventListener("click", play, false);
+        $li.addEventListener('click', function (e) {
+            play();
+            setAnimation($models1, 'bouncing');
+        });
+        $models1.appendChild($li);
+        setAnimation($models1, 'bouncing');
+        $li = document.createElement('li');
+        $li.className = 'model2';
+        var text1 = document.createTextNode(caption);
+
+        $li.appendChild(text1);
+        $li.addEventListener('click', function (e) {
+            play();
+            setAnimation($models_caption, 'bouncing');
+        });
+
+        $models_caption.appendChild($li);
+        setAnimation($models_caption, 'bouncing');
+        for (var a in caption_Ar) {
+            $li = document.createElement('li');
+            $li.className = 'model';
+            $li.dataset.letter = caption_Ar[a];
+
+            $models.appendChild($li);
+        }
+
+        interact('.model').dropzone({
+            overlap: 0.10,
+            ondragenter: function (event) {
+                event.target.classList.add('hovered');
+            },
+            ondragleave: function (event) {
+                event.target.classList.remove('hovered');
+            },
+            ondrop: function (event) {
+                var $droppable = event.target,
+                    $draggable = event.relatedTarget;
+
+                $droppable.classList.remove('hovered');
+
+                if (!$droppable.classList.contains('done') && $draggable.dataset.letter == $droppable.dataset.letter) {
+                    sounds.blup.play();
+
+                    $draggable.style.visibility = 'hidden';
+
+                    $droppable.classList.add('done');
+                    $droppable.classList.add('bouncing');
+
+                    if (++score == caption_Ar.length) {
+                        winGame();
+                    }
+                } else {
+                    sounds.fail.play();
+
+                    moveElement(event.dragEvent, $draggable);
+
+                    setAnimation($draggable, 'bouncing', true);
+                }
+            }
+        });
+
+        setAnimation($models, 'shown');
+        setAnimation($models1, 'shown');
+
+        // Build Letters
+
+        $letters.innerHTML = '';
+        $letters1.innerHTML = '';
+
+        for (var b in shuffledLetters) {
+            $li = document.createElement('li');
+            $li.className = 'letter';
+            $li.dataset.letter = shuffledLetters[b];
+
+            // $letters1.appendChild($li);
+        }
+        for (var b in shuffledLetters) {
+            $li = document.createElement('li');
+            $li.className = 'letter';
+            $li.dataset.letter = shuffledLetters[b];
+
+            $letters.appendChild($li);
+        }
+
+        interact('.letter').draggable({
+            onmove: moveElement,
+            onstart: function (event) {
+                var letter = event.target.dataset.letter;
+
+                if (sounds[letter]) {
+                    sounds[letter].play();
+                }
+
+                event.target.style.zIndex = parseInt(new Date().getTime() / 1000);
+            }
+        });
+
+        setAnimation($letters, 'thrown');
+        // setAnimation($letters1, 'thrown');
+
+        // Play sounds
+
+        gameSound.play();
+
+        setTimeout(function () {
+            sounds.dice.play();
+        }, 1000);
+
+        // Disable transition
+
+        setTimeout(function () {
+            $html.classList.remove('transitionable');
+        }, 1500);
+    }
+
+    // When a Game is won
+
+    function winGame () {
+        $html.classList.add('won');
+        $html.classList.add('transitionable');
+
+        $('.model', true).forEach(function ($model) {
+            $model.classList.remove('bouncing');
+
+            setAnimation($model, 'flipping');
+        });
+
+        sounds.win.play();
+
+        setTimeout( function() {
+            nextGame();
+        }, 3000);
+    }
+
+    // InteractJS drag function
+
+    function moveElement (event, $elmt) {
+        var x, y, dir = -1;
+
+        if (!$elmt) {
+            $elmt = event.target;
+            dir = 1;
+        }
+
+        x = ((parseFloat($elmt.getAttribute('data-x')) || 0) + event.dx * dir);
+        y = ((parseFloat($elmt.getAttribute('data-y')) || 0) + event.dy * dir);
+        r = getRotationValue($elmt);
+
+        $elmt.setAttribute('data-x', x);
+        $elmt.setAttribute('data-y', y);
+        $elmt.style.transform = 'translate(' + x + 'px, ' + y + 'px) rotate(' + r + 'deg)';
+    }
+
+    function setAnimation ($elmt, className, remove) {
+        $elmt.classList.remove(className);
+        $elmt.offsetHeight;
+        $elmt.classList.add(className);
+
+        if (remove) {
+            $elmt.addEventListener("animationend", function () {
+                $elmt.classList.remove(className);
+            });
+
+            $elmt.addEventListener("transitionend", function () {
+                $elmt.classList.remove(className);
+            });
+        }
+    }
+
+    // Get the rotation value of the letter
+
+    function getRotationValue ($elmt) {
+
+        var style = window.getComputedStyle($elmt, null);
+
+        var t = style.getPropertyValue("-webkit-transform") ||
+                style.getPropertyValue("-moz-transform") ||
+                style.getPropertyValue("-ms-transform") ||
+                style.getPropertyValue("-o-transform") ||
+                style.getPropertyValue("transform") ||
+                '';
+
+        var values = t.split('(')[1],
+            values = values.split(')')[0],
+            values = values.split(',');
+
+        var b = values[1];
+
+        return Math.round(Math.asin(b) * (180 / Math.PI));
+    }
+    // Shuffle letters
+
+    function shuffleLetters (array) {
+        return array.slice().reverse().sort(function () {
+            return 0.5 - Math.random();
+        });
+    }
+
+    // Selector function
+
+    function $ (selector, all) {
+        if (all) {
+            return [].slice.call(document.querySelectorAll(selector));
+        }
+
+        return document.querySelector(selector);
+    }
+    function play(){
+        sounds[games[index].caption].play();
+    }
+    // Start Game
+
+    setGame(index);
+    setAnimation($html, 'started', false);
+})();
+
+</script>	
+	
+	
+</body>
+</html>
